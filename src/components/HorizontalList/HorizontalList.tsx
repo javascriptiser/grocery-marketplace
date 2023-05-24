@@ -1,14 +1,19 @@
 import style from './HorizontalList.module.css'
-export const HorizontalList = () => {
+import {Children, cloneElement, isValidElement} from "react";
+
+// @ts-ignore
+export const HorizontalList = ({children}) => {
+    const mapped = Children.map(children, (child) => {
+        if (isValidElement(child)) {
+            return cloneElement(child, {
+                // @ts-ignore
+                ...child.props,
+            })
+        }
+        return null
+    })
+
     return <div className={style.cards}>
-        <div className={style.card}><h2>Карточка</h2></div>
-        <div className={style.card}><h2>Карточка</h2></div>
-        <div className={style.card}><h2>Карточка</h2></div>
-        <div className={style.card}><h2>Карточка</h2></div>
-        <div className={style.card}><h2>Карточка</h2></div>
-        <div className={style.card}><h2>Карточка</h2></div>
-        <div className={style.card}><h2>Карточка</h2></div>
-        <div className={style.card}><h2>Карточка</h2></div>
-        <div className={style.card}><h2>Карточка</h2></div>
+        {mapped}
     </div>
 }

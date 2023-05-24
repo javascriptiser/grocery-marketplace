@@ -1,6 +1,6 @@
 .container {
-    background-color: #13B58C;
-    padding: 20px;
+    background-color: #33907C;
+    padding: 20px 20px 0 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -23,7 +23,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10%;
     column-gap: 20px;
 }
 .backArrowIcon{

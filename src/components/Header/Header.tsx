@@ -2,7 +2,7 @@ import styles from "./Header.module.css"
 import cartIcon from "../../assets/cartIcon.svg";
 import backArrowIcon from "../../assets/backArrowIcon.svg";
 import favoritesIcon from "../../assets/favoritesIcon.svg";
-import {PropsWithChildren} from "react";
+import {FC, PropsWithChildren} from "react";
 
 
 interface HeaderProps {
@@ -11,7 +11,7 @@ interface HeaderProps {
     withBackArrowIcon?: boolean,
 }
 
-export const Header = (props: PropsWithChildren<HeaderProps>) => {
+export const Header:FC<PropsWithChildren<HeaderProps>> = (props) => {
 
     const {
         text = "Groceries",

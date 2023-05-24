@@ -1,0 +1,16 @@
+.button {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 4px 5px;
+    color: #fff;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button img {
+    margin-right: 6px;
+}
