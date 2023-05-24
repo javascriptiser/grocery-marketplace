@@ -1,0 +1,31 @@
+.container {
+    background-color: #13B58C;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.textContainer {
+    width: 100%;
+    font-weight: bold;
+}
+.textContainer a:hover {
+    cursor: pointer;
+}
+
+.iconsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    column-gap: 20px;
+}
+.backArrowIcon{
+    cursor: pointer;
+}

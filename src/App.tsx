@@ -1,10 +1,15 @@
-import {HorizontalList} from "./components/HorizontalList/HorizontalList.tsx";
+import {Header} from "./components/Header/Header.tsx";
+import {SearchInput} from "./components/Header/SearchInput/SearchInput.tsx";
+import {FilterButtons} from "./components/Header/FilterButtons/FilterButtons.tsx";
 
 function App() {
     return (
-        <div>
-            <HorizontalList/>
-        </div>
+        <>
+            <Header  >
+                <SearchInput/>
+                <FilterButtons/>
+            </Header>
+        </>
     )
 }
 
