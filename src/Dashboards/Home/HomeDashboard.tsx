@@ -5,6 +5,7 @@ import {HorizontalList} from "../../components/HorizontalList/HorizontalList.tsx
 import {HorizontalListItemWrapper} from "../../components/HorizontalList/HorizontalListItem.tsx";
 import {FirstHorizontalListItem} from "../../components/HorizontalList/FirstHorizontalListItem.tsx";
 import {FakeData} from "../../FakeData.tsx";
+import {CardMenu} from "../../components/CardMenu/CardMenu.tsx";
 
 export const HomeDashboard = () => {
     return <>
@@ -18,5 +19,6 @@ export const HomeDashboard = () => {
             </HorizontalListItemWrapper>
             <FakeData/>
         </HorizontalList>
+        <CardMenu/>
     </>
 }

@@ -1,0 +1,30 @@
+.wrapper {
+    position: relative;
+}
+
+.container {
+    width: 93px;
+    height: 93px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    filter: brightness(70%);
+    transition: ease-in-out 0.4s;
+}
+
+.container:hover  {
+    filter: brightness(50%);
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 11px;
+}
+
+.text:hover{
+    cursor: pointer;
+}

@@ -13,3 +13,8 @@ export const FakeData = () => {
     return <>{indents}</>
 }
 
+
+export const FakeCardMenuData = () => {
+
+}
+

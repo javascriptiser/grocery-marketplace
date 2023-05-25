@@ -3,6 +3,7 @@
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     margin-left:20px;
+    margin-bottom: 16px;
 }
 
 .cards::-webkit-scrollbar {
